@@ -1,0 +1,247 @@
+:root{
+  --colorForMcDonaldsHeader: #FF7979;
+  --kfcRedColor: #AB182F;
+  --bodyColor: rgb(246, 211, 135);
+}
+@font-face {
+  font-family: homePageCustomFont;
+  src: url(/src/fonts/TanPumpkinsBackPersonalUse-RpB9o.ttf);
+}
+@keyframes run{
+  0%{
+      margin-left: -100px;
+  }
+  100%{
+      margin-left: 100vw;
+      
+  }
+  
+}
+.mcdonalds-header>img{
+  max-width: 100%;
+  max-height: 100%;
+  animation: run 5s  infinite linear;
+}
+.mcdonalds-header{
+  height: 10vh;
+  background-color: var(--colorForMcDonaldsHeader);
+}
+.App {
+  text-align: center;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+.registration_container{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.registration_form{
+  background-image: url(/src/images/Fast_Food_Gif_BG.gif);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.registration_form>form{
+  padding-top: 10vh;
+  margin-left: 35vw;
+  border: solid black;
+  width: 30vw;
+  height: 50vh;
+  background: rgb(255, 255, 255, 0.6);
+}
+#btnRegisterNow{
+  background-color: green;
+  color: white;
+}
+#btnLoginHere{
+  background-color: rgb(255, 255, 186);
+}
+.home-bg{
+  background-image: url(/src/images/Fast_Food_Gif_BG.gif);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-header{
+  background-image: url(images/running\ hotdog.gif);
+  background-size: contain;
+  height: 20vh;
+}
+.menu-list-container{
+  display: flex;
+  align-items: center;
+  padding-top: 25vh;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.kfc-header{
+  height: 10vh;
+  background-color: black;
+}
+.kfc-header>img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.kfc-welcome-message{
+  background-color: black;
+  margin-top: -1vh;
+}
+.kfc-welcome-message>p{
+  margin-top: -1vh;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+  font-family: homePageCustomFont;
+}
+.kfc-menu-container{
+  display: flex;
+}
+.welcome-message{
+  font-family: homePageCustomFont;
+  font-size: 2em;
+  font-weight: bold;
+  background-color: #92D9D0;
+}
+
+.btn-login, .btn-login:hover{
+  background-color: red;
+  font-size: 1.5em;
+  height: 5vh;
+  color: white;
+  text-shadow: 2px 2px black;
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+}
+.btn-login:active{
+  background-color: rgb(105, 0, 0);
+}
+.btn-register, .btn-register:hover{
+  background-color: red;
+  font-size: 1.5em;
+  height: 5vh;
+  color: white;
+  text-shadow: 2px 2px black;
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+}
+.btn-register:active{
+  background-color: rgb(105, 0, 0);
+}
+.register-btn-container{
+  padding-top: 5vh;
+}
+.registration-header-logo{
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+}
+.registration-header-logo>img{
+    
+  max-width: 100%;
+  max-height: 100%;
+  left: 0;
+}
+
+.menu-list-container > img:hover{
+  cursor: pointer;
+}
+.home-header > h1, h2{
+  font-family: homePageCustomFont;
+}
+.home-icon{
+  position: absolute;
+  right: 1vw;
+  top: 80vh;
+}
+.mcdonalds-welcome-message>p{
+  margin-top: -1vh;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.mcdonalds-welcome-message{
+  background-color: var(--colorForMcDonaldsHeader);
+  font-family: homePageCustomFont;
+}
+.kfc-menu{
+  height: 100%;
+  background-color: var(--kfcRedColor);
+}
+.mcdonalds-menu{
+  height: 100%;
+  background-image: url(./images/mcdonalds_bg.jpeg);
+  background-size: 300px 300px;
+}
+.mcdonalds-menu-container{
+  display: flex;
+}
+figure>img{
+  height: 50vh;
+  width: 25vw;
+}
+.kfc-menu>h2{
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+.mcdonalds-menu>h2{
+  font-family: 'Courier New', Courier, monospace;
+}
+.fa-icon{
+  font-size: 5vw;
+  color: white;
+  padding: 20px;
+  text-shadow: 2px 2px black;
+  box-shadow: 2px 2px 5px rgb(255, 255, 255);
+  border: solid black;
+  background-color: black;
+  border-radius: 5vw;
+}
+
+.admin-page-menu{
+  display: flex;
+  justify-content: center;
+}
+ul{
+  border: solid black;
+  width: 15vw;
+  background-color: var(--bodyColor);
+}
+li{
+  text-align: left;
+}
+li>button{
+  float: right;
+  background-color: red;
+  color: white;
+}
+
+.admin-page-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.admin-page-container{
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/Fast_Food_Gif_BG.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn-add-to-menu{
+  width: 10vw;
+  background-color: green;
+  color: white;
+}
+.btn-order{
+  background-color: green;
+  color: white;
+}
+.fa-icon:active{
+  background-color: rgb(74, 68, 68);
+}
+.hover-pointer:hover{
+  cursor: pointer;
+}
